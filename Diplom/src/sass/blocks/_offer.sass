@@ -1,0 +1,114 @@
+.offer
+	padding-bottom: 205px
+	&:before
+		content: ''
+		background-color: $backgroung-color
+		width: 1095px
+		height: 563px
+		position: absolute	
+		left: 0
+	&__button
+		margin-left: 336px
+		width: 244px
+		height: 58px
+		background-color: $button-color
+		border: none
+		color: #020202
+		font-size: 28px
+		+Semibold
+		transform: translateY(-27px)
+		position: relative
+	&-box
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		position: relative
+		max-width: 667px
+		text-align: center
+		margin-top: 36px
+		&__card
+			width: 198px
+			height: 168px 
+			background-color: $white-text
+			margin-bottom: 36px
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			font-size: 18px
+			font-weight: 400
+			line-height: 23px
+			text-transform: uppercase
+			+nova
+			padding-bottom: 30px
+			&__title
+				font-weight: 700
+	&-list
+		padding: 0
+		&__number
+			font-size: 35px
+			font-weight: 700
+			line-height: 25px
+			text-transform: uppercase
+			color: $button-color
+			display: flex
+			position: relative
+			&:after
+				content: ''
+				color: $text-color
+				width: 32px
+				height: 2px
+				margin-left: 22px
+				margin-right: 13px
+				// position: absolute
+				// left: 0
+				// top: 0
+				background: #010101
+				&:first-child
+					&:after
+						content: ''
+						color: $text-color
+						width: 32px
+						height: 1px
+						margin-left: 22px
+						margin-right: 13px
+				&:nth-child(2)
+					&:after
+						content: ''
+						color: $text-color
+						width: 32px
+						height: 2px
+						margin-left: 32px
+						margin-right: 13px
+		&__item
+			display: flex
+			font-size: 20px
+			font-weight: 400
+			line-height: 25px
+			margin-bottom: 20px
+			+Semibold
+			max-width: 408px
+			&:first-child
+				margin-top: 23px
+			&:nth-child(2)
+				margin-top: 67px
+				.offer-list__number
+					&:after
+						content: ''
+						color: $text-color
+						width: 32px
+						height: 2px
+						margin-left: 20px
+						margin-right: 13px
+			&:nth-child(3)
+				margin-top: 67px
+			&:last-child
+				margin-top: 91px
+				margin-bottom: 0
+			
+
+.wrapper
+	display: flex
+	justify-content: space-between
+	text-decoration: none

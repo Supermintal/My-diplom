@@ -1,0 +1,95 @@
+.navbar
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 8px
+	&-block 
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 7px
+	&__button
+		width: 138px
+		height: 30px
+		background-color: #ffc800
+		color: #030303
+		+thin
+		font-size: 14px
+		font-weight: 700
+		border: none
+		position: relative
+		padding-top: 4px
+	&__number
+		margin-left: 0
+		margin-right: 42px
+		&:before
+			content: ''
+			background-color: $backgroung-color
+			width: 41%
+			height: 84px
+			position: absolute
+			top: 0
+			right: 0	
+	&__logo
+		display: flex
+		align-items: center
+	&__text
+		margin-left: 139px
+		margin-right: auto
+		display: flex
+		&__menu
+			margin-right: 55px
+			text-decoration: none
+			color: $text-color
+			font-weight: 400
+			&:before
+				content: ''
+				display: block
+				margin-right: 10px
+				width: 1px
+				height: 12px
+				background-color: $text-color
+				position: absolute
+				margin-top: 4px
+				margin-left: -31px
+			&:first-child
+				&:before
+					display: none
+			&:after
+				content: ''
+				display: block
+				height: 2px
+				background-color: $button-color
+				width: 0%
+				text-decoration: none
+				transition: 0.3s
+			&:hover
+				color: $button-color
+				text-decoration: none
+				&:after
+					width: 100%
+			&:nth-child(2)
+				margin-right: 63px
+			&:nth-child(3)
+				margin-right: 58px
+			&:nth-child(4)
+				margin-right: 58px
+			&:last-child
+				margin-right: 0	
+		&__amenities
+			margin-right: 20px
+			margin-left: 20px
+			+thin
+	&__phone
+		text-decoration: none
+		color: #000
+		+reg
+		position: relative
+		font-weight: 700
+		font-size: 18px
+		margin-left: 2px
+	.phone-img
+		position: relative
+
+	
+			

@@ -1,0 +1,63 @@
+.news
+	background-color: #f7f7f7
+	&__button
+		margin-left: 336px
+		width: 244px
+		height: 58px
+		background-color: $button-color
+		border: none
+		color: #020202
+		font-size: 28px
+		+Semibold
+		transform: translateY(-27px)
+		&__down
+			width: 300px
+			height: 58px
+			background-color: $button-color
+			border: none
+			color: #020202
+			font-size: 20px
+			+nova
+			text-align: center
+	&-button
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 70px
+	&-cards
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+		&__card
+			&:nth-child(2)
+				& [class='news-cards__card__date']:before
+					margin-right: 5px
+					margin-left: 11px
+			&__image
+				margin-bottom: 17px
+			&__title
+				text-transform: uppercase
+				font-size: 21px
+				font-weight: 700
+				+reg
+			&__headline
+				display: flex
+				justify-content: space-between
+				align-items: center
+			&__date
+				margin-left: 56px
+				&:before
+					content: '29'
+					width: 25px
+					height: 25px
+					background-color: $button-color
+					display: inline
+					margin-right: 5px		
+			&__text
+				font-size: 18px
+				font-weight: 400
+				line-height: 28px
+				margin-top: 16px
+				&__description
+					&:hover
+						text-decoration: underline	
